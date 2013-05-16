@@ -9,7 +9,7 @@
  */
 public class Frame extends javax.swing.JFrame
 {
-static String asd;
+    static String dnaStr;
     /**
      * Creates new form frame
      */
@@ -162,14 +162,14 @@ static String asd;
 				dna = dna.replace("a","u");
 				dna = dna.replace("t","a");
 				dna = dna.toLowerCase();
-				asd = dna;
+				dnaStr = dna;
 		        
-				jTextMrnaFld.setText(asd);
+				jTextMrnaFld.setText(dnaStr);
     }//GEN-LAST:event_jBtnDnaConvertActionPerformed
 
     private void jBtnMrnaConvertActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jBtnMrnaConvertActionPerformed
     {//GEN-HEADEREND:event_jBtnMrnaConvertActionPerformed
-        String dna = asd;
+        String dna = dnaStr;
         String[] dnaArray = dna.split(" ");
 
             String[][] names = { {"phenylanine", "uuu", "uuc"},
