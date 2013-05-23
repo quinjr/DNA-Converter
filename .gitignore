@@ -4,3 +4,6 @@
 *.jar
 
 *.properties
+/dist/
+/build/
+dist/.DS_Store
